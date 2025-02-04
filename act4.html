@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/g0RGVDBR/image-removebg-preview.png">
+    <title>EvenGo</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       
+    }
+    body{
+        background-color: #282829;
+    }
+    header{
+       height: 50px;
+    }
+    .btn{
+        background-color: #27AE60;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .type1{
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        transition: background-color 0.5s;
+    }
+    .head{
+       text-align: center;
+         line-height: 50px;
+    }
+    .logo{
+        position: absolute;
+        top: 0;
+    }
+    nav{
+        position: sticky;
+            top: 0;
+            
+    }
+    nav ul{
+        list-style-type: none;
+            
+    }
+    nav li{
+        float: left;
+        width: 20%;
+        box-sizing: border-box;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        background-color: #27AE60;
+    }
+    nav a{
+        color: white;
+        display: block;
+        transition: background-color 0.5s;      
+    }
+    nav a:hover{
+        background-color: #555;
+    }
+    h2{
+        color: white;
+    }
+    a{
+        text-decoration: none;  
+        color: white; 
+    }
+    section{
+        display: flex;
+        color: white;
+        margin-left: 10px;
+        text-align: justify;
+        width: 100%;
+    }
+    main{
+        width: 65%;
+    }
+   main img, iframe{
+        margin-left: 40px;
+        width:800px;
+        border-radius: 10px;
+    }
+    h3{
+        color: lightseagreen;
+    }
+    footer{
+        height: 50px;
+        background-color: #27AE60;
+        text-align: center;
+        line-height: 50px;
+    }
+    footer h3{
+        color: white;
+    }
+    aside{
+        width: 28%;
+        position: fixed;
+        right: 20px;
+    }
+    aside img{
+        margin-left: -5px;
+        width: 120px;
+        transition: all 0.5s;
+    }
+    aside a{
+        display: flex;
+        justify-content: space-between;
+    }
+    aside a:hover img{
+        transform: scale(1.1,1.1);
+        filter: brightness(0.6);
+        border-radius: 10px;
+    }
+    a p{
+        align-self: center;
+        margin-left: 10px;
+    }
+    ul{
+        list-style-type: none;
+    }
+    div{
+        width: 800px;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+        margin-left: 30px;
+    }
+    div img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 0;
+        animation: fade 14s infinite;
+    }
+    div img:nth-child(1){
+        animation-delay: 0s;
+    }
+    div img:nth-child(2){
+        animation-delay: 2s;
+    }
+    div img:nth-child(3){
+        animation-delay: 4s;
+    }
+    div img:nth-child(4){
+        animation-delay: 6s;
+    }
+    div img:nth-child(5){
+        animation-delay: 8s;
+    }
+    div img:nth-child(6){
+        animation-delay: 10s;
+    }
+    div img:nth-child(7){
+        animation-delay: 12s;
+    }
+    @keyframes fade{
+        0% { opacity: 0; }
+        10% { opacity: 1; }
+        30% { opacity: 1; }
+        40% { opacity: 0; }
+        100% { opacity: 0; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 class="head">Reserver votre ticket de votre match préféré</h2>
+        <img src="https://i.postimg.cc/g0RGVDBR/image-removebg-preview.png" alt="no" height="50px" class="logo">
+        <input type="button" value="se connecter" onclick="window.location.href='register.php'" class="btn type1">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="event.html">matchs</a></li>
+            <li><a href="actualité.html">Actualités</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <br><br><br><br>
+    <section>
+    <main>
+    <p class="pub">publié le: 18/01/2025</p><br>
+    <h1>Grand stade de Tanger: arrivée de sièges flambant neufs</h1><br><br>
+    <img src="https://i.postimg.cc/L8qLq9gn/Capture-d-cran-18-1-2025-202719-sport-le360-ma.jpg" alt="no"><br><br>
+    <p class="para">De premiers sièges de dernière génération sont arrivés sur le chantier du Grand stade de Tanger. Des sièges au confort optimal et à la qualité inégalée.<br><br>Un premier arrivage de sièges flambant neufs est arrivé au Grand stade de Tanger, venu tout droit d’Italie. La construction des gradins étant finalisée, les rénovations entrent dans une toute nouvelle phase.<br><br>Les sièges en question, de «cinquième génération», sont le nec plus ultra du confort, de la sécurité et de l’excellence. Le tout aux normes de la FIFA.</p><br><br>
+    <iframe src="https://mega.nz/embed/83k1QaBA#X32ab3seMeYkE6yDPfG3WxaX9GNNlFV_JGu_CW20kvU" frameborder="0" MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=800 HEIGHT=400 allowfullscreen></iframe><br><br>
+    <p>De couleur blanche, ces sièges concernent la partie est et nord-est du stade de la ville du Détroit. Leur installation démarrera dès la fin de la peinture des gradins.<br><br>Par ailleurs, le Stade sera doté de sièges blancs et bleus.<br><br>Selon nos sources, il est prévu que le Grand Stade de Tanger se dote d’autres types de sièges réservés à d’autres espaces: notamment les tribunes de première classe et VIP, ainsi que les salles couvertes, qui seront pliables.</p><br><br>
+    <div>
+        <img src="https://i.postimg.cc/0jtYKZGs/IZVXQGYT4-ZF2-JOQURJZ43-OHQTA.jpg" height="400px" alt="no">
+        <img src="https://i.postimg.cc/zXcwJtXw/NCUS26-ZIIZCFFHH7-YY5-ENTEBIA.jpg" height="400px" alt="no">
+        <img src="https://i.postimg.cc/VkJRnyHH/OJW3-SXHF45-B7-ZBQVF36225-FVWM.jpg" height="400px" alt="no">
+        <img src="https://i.postimg.cc/SskCZHD4/RIKO7-VTFBVAXFO6-WNZIOFDMH4-A.jpg" height="400px" alt="no">
+        <img src="https://i.postimg.cc/02Fmgzcc/S4-LRWQNH6-JDFDF3-BAXK6-O7-A3-DA.png" height="400px" alt="no">
+        <img src="https://i.postimg.cc/FHky1y7M/UGSO5-BWNTZDAHFTAUZVR6-LEK2-E.jpg" height="400px" alt="no">
+        <img src="https://i.postimg.cc/KcQrWc6H/ZFWDX6-MJRBGV5-O3-X7-LJWBO55-GI.jpg" height="400px" alt="no">
+    </div>
+    <br><br>
+    </main>
+    <aside>
+        <h3>Articles similaires:</h3><br>
+        <ul>
+            <li><a href="act2.html"><img src="https://i.postimg.cc/zvSRrvQc/Capture-d-cran-18-1-2025-19499-sport-le360-ma.jpg" alt="no" height="80px" width="200px"><p>Sundowns-AS FAR: un sommet aux enjeux multiples</p></a></li><br>
+            <li><a href="act1.html"><img src="https://i.postimg.cc/Pf2W1zDP/africa-cup-2-780x470.jpg" style="margin-bottom: 20px;" alt="no" height="80px" width="200px"><p>Date du tirage au sort de la Coupe d'Afrique des Nations 2025 au Maroc et les chaînes de diffusion</p></a></li>
+            <li><a href="act3.html"><img src="https://i.postimg.cc/qvmDrvVq/Capture-d-cran-18-1-2025-201229-sport-le360-ma.jpg" alt="no" height="80px" width="200px"><p>Raja: le bureau directeur tente de redresser la barre</p></a></li><br>
+            <li><a href="act4.html"><img src="https://i.postimg.cc/L8qLq9gn/Capture-d-cran-18-1-2025-202719-sport-le360-ma.jpg" alt="no" height="80px" width="200px"><p>Grand stade de Tanger: arrivée de sièges flambant neufs</p></a></li>
+    </aside>
+</section>
+<footer>
+    <h3>tous droits réservés © 2025</h3><img src="https://i.postimg.cc/g0RGVDBR/image-removebg-preview.png" alt="no" height="50px">
+</footer>
+</body>
+</html>

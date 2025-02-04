@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvenGo</title>
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/g0RGVDBR/image-removebg-preview.png">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #282829;
+    }
+    header{
+       height: 50px;
+    }
+    .btn{
+        background-color: #27AE60;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .type1{
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        transition: background-color 0.5s;
+    }
+    .head{
+       text-align: center;
+         line-height: 50px;
+    }
+    .logo{
+        position: absolute;
+        top: 0;
+    }
+    nav{
+        position: sticky;
+            top: 0;
+            
+    }
+    nav ul{
+        list-style-type: none;
+            
+    }
+    nav li{
+        float: left;
+        width: 20%;
+        box-sizing: border-box;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        background-color: #27AE60;
+    }
+    nav a{
+        color: white;
+        display: block;
+        transition: background-color 0.5s;      
+    }
+    nav a:hover{
+        background-color: #555;
+    }
+    .cherche{
+        width: 30%;
+        margin-left: 35%;
+        border-radius: 10px;
+        border: none;
+        padding: 10px;
+    }
+    .prochain{
+        width: 50%;
+        height: fit-content;
+        margin-left: 25%;
+        background-color: #555;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .event{
+        text-align: center;
+        margin-top: 10px;
+        background-color: #2ECC71;
+        border-radius: 15px;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .type2{
+        float: right;
+        margin-top: -20px;
+        background-color: #27AE60;
+        transition: background-color 0.5s;
+    }
+    .type2:hover,.type1:hover{
+        background-color: #1F8B4C;
+    }
+    .type3{
+        background-color: #2980B9;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 5px 0 10px;
+        transition: background-color 0.5s;
+    }
+    .type3:hover{
+        background-color: #1F6392;
+    }
+    h2{
+        color: white;
+    }
+    .comment{
+        width: 60%;
+        height: fit-content;
+        margin-left: 20%;
+        background-color: #555;
+        padding: 10px;
+        border-radius: 10px;
+        
+    }
+    .comment h2{
+        text-align: center;
+    }
+    .com h3{
+        margin: 5px 0;
+    }
+    .comment textarea{
+        width: 90%;
+        margin-left: 5%;
+        border-radius: 10px;
+        border: none;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .comment input[type="text"]{
+        width: 90%;
+        margin-left: 5%;
+        border-radius: 10px;
+        border: none;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .actualité{
+        width: 90%;
+        height: fit-content;
+        background-color: #555;
+        padding: 10px;
+        border-radius: 10px;
+        margin-left: 5%;
+    }
+    .actualité ul{
+        margin-top: 20px;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-left: 5%;
+    }
+    .actualité li{
+        width: 50%;
+    }
+    a img{
+        border-radius: 10px;
+        transition: all 1s;
+        width: 80%;
+    }
+    ul p{
+        width: 80%;
+        background-color: rgb(85,85,85,0.5);
+        color: white;
+        position: relative;
+        top: -54px;
+        padding: 10px;
+        text-align: center;
+        opacity: 0;
+        transition: all 1s;
+    }
+    a:hover p{
+        opacity: 1;
+        border-radius: 15px;
+    }
+    a:hover img{
+        transform: scale(1.05);
+    filter: brightness(0.6);
+    }
+    a{
+        text-decoration: none;   
+    }
+    footer{
+        height: 50px;
+        background-color: #27AE60;
+        text-align: center;
+        line-height: 50px;
+    }
+    footer h3{
+        color: white;
+    }
+</style>
+<body>
+    <header>
+        <h2 class="head">Reserver votre ticket de votre match préféré</h2>
+        <img src="https://i.postimg.cc/g0RGVDBR/image-removebg-preview.png" alt="no" height="50px" class="logo">
+        <input type="button" value="se connecter" onclick="window.location.href='register.html'" class="btn type1">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="event.html">matchs</a></li>
+            <li><a href="actualité.html">Actualités</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <br><br><br><br>
+    <input type="text" placeholder="Chercher un match" class="cherche"><br><br>
+    <section class="prochain">
+        <h2>Prochain match:</h2><input type="button" value="Voir plus" onclick="window.location.href='event.html'" class="btn type2">
+        <div class="event">
+            <br><h3>Championnat du Maroc Professionnel Première Division 2024/2025</h3><br>
+            <h3>IRT VS FUS</h3>
+            <img src="https://i.postimg.cc/ZRQkXvgZ/OIP-1.jpg" alt="no" height="200px">
+            <p>Journée: 19</p>
+            <p>Stade: Stade du village sportif de Tanger</p>
+            <p>Date: 18/01/2025</p>
+            <p>Heure: 16:00</p>
+            <input type="button" value="Reserver votre ticket" onclick="window.location.href='IRTvsFUS.html'" class="btn type3">
+        </div>
+        <div class="event">
+            <br><h3>Championnat du Maroc Professionnel Première Division 2024/2025</h3><br>
+            <h3>SCCM VS RCAZ</h3>
+            <img src="https://i.postimg.cc/hGg77f2S/image-1.webp" alt="no" height="200px" width="500px">
+            <p>Journée: 19</p>
+            <p>Stade: Stade El Bachir de Mohamedia</p>
+            <p>Date: 18/01/2025</p>
+            <p>Heure: 18:00</p>
+            <input type="button" value="Reserver votre ticket" onclick="window.location.href='RCAZvsSCCM.html'" class="btn type3">
+        </div>
+    </section>
+    <br><br>
+    <section class="actualité">
+        <h2>Actualités:</h2><input type="button" value="Voir plus" onclick="window.location.href='actualité.html'" class="btn type2">
+        <ul class="conteneur">
+            <li><a href="act2.html"><img src="https://i.postimg.cc/zvSRrvQc/Capture-d-cran-18-1-2025-19499-sport-le360-ma.jpg" alt="no" height="300px"><p>Sundowns-AS FAR: un sommet aux enjeux multiples</p></a></li>
+            <li><a href="act3.html"><img src="https://i.postimg.cc/qvmDrvVq/Capture-d-cran-18-1-2025-201229-sport-le360-ma.jpg" alt="no" height="300px"><p>Raja: le bureau directeur tente de redresser la barre</p></a></li>
+            <li><a href="act4.html"><img src="https://i.postimg.cc/L8qLq9gn/Capture-d-cran-18-1-2025-202719-sport-le360-ma.jpg" alt="no" height="300px"><p>Grand stade de Tanger: arrivée de sièges flambant neufs</p></a></li>
+            <li><a href="act1.html"><img src="https://i.postimg.cc/Pf2W1zDP/africa-cup-2-780x470.jpg" alt="no" height="300px"><p>Date du tirage au sort de la Coupe d'Afrique des Nations 2025 au Maroc et les chaînes de diffusion</p></a></li>
+        </ul>
+
+    </section>
+    <br><br>
+    <section class="comment">
+        <h2>Commentaires:</h2>
+        <div class="com">
+            <h3>Youssef</h3>
+            <p>Super site, j'ai pu reserver mon ticket en 2 minutes</p>
+        </div>
+        <div class="com">
+            <h3>Yassine</h3>
+            <p>Je recommande ce site, c'est rapide et efficace</p>
+        </div>
+        <div class="com">
+            <h3>Younes</h3>
+            <p>Je suis très satisfait de ce site, je vais le recommander à mes amis</p>
+        </div>
+        <h2>--------------------------------</h2>
+        <input type="text" placeholder="votre nom"><br>
+        <textarea placeholder="commentez ici"></textarea>
+        <input type="submit" value="Envoyez" class="btn type3" style="margin-left: 45%;">
+    </section>
+    <br><br>
+    <footer>
+        <h3>tous droits réservés © 2025</h3><img src="https://i.postimg.cc/g0RGVDBR/image-removebg-preview.png" alt="no" height="50px">
+    </footer>
+</body>
+</html>
