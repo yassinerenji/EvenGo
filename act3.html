@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="evengo.png">
+    <title>EvenGo</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       
+    }
+    body{
+        background-color: #282829;
+    }
+    header{
+       height: 50px;
+    }
+    .btn{
+        background-color: #27AE60;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .type1{
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        transition: background-color 0.5s;
+    }
+    .head{
+       text-align: center;
+         line-height: 50px;
+    }
+    .logo{
+        position: absolute;
+        top: 0;
+    }
+    nav{
+        position: sticky;
+            top: 0;
+            
+    }
+    nav ul{
+        list-style-type: none;
+            
+    }
+    nav li{
+        float: left;
+        width: 20%;
+        box-sizing: border-box;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        background-color: #27AE60;
+    }
+    nav a{
+        color: white;
+        display: block;
+        transition: background-color 0.5s;      
+    }
+    nav a:hover{
+        background-color: #555;
+    }
+    h2{
+        color: white;
+    }
+    a{
+        text-decoration: none;  
+        color: white; 
+    }
+    section{
+        display: flex;
+        color: white;
+        margin-left: 10px;
+        text-align: justify;
+        width: 100%;
+    }
+    main{
+        width: 65%;
+    }
+   main img{
+        margin-left: 40px;
+        width:800px;
+        border-radius: 10px;
+    }
+    h3{
+        color: lightseagreen;
+    }
+    footer{
+        height: 50px;
+        background-color: #27AE60;
+        text-align: center;
+        line-height: 50px;
+    }
+    footer h3{
+        color: white;
+    }
+    aside{
+        width: 28%;
+        position: fixed;
+        right: 20px;
+    }
+    aside img{
+        margin-left: -5px;
+        width: 120px;
+        transition: all 0.5s;
+    }
+    aside a{
+        display: flex;
+        justify-content: space-between;
+    }
+    aside a:hover img{
+        transform: scale(1.1,1.1);
+        filter: brightness(0.6);
+        border-radius: 10px;
+    }
+    a p{
+        align-self: center;
+        margin-left: 10px;
+    }
+    ul{
+        list-style-type: none;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 class="head">Reserver votre ticket de votre match préféré</h2>
+        <img src="evengo.png" alt="no" height="50px" class="logo">
+        <input type="button" value="se connecter" onclick="window.location.href='register.html'" class="btn type1">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="event.html">matchs</a></li>
+            <li><a href="actualité.html">Actualités</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <br><br><br><br>
+    <section>
+    <main>
+    <p class="pub">publié le: 18/01/2025</p><br>
+    <h1>Raja: le bureau directeur tente de redresser la barre</h1><br><br>
+    <img src="3.jpg" alt="no"><br><br>
+    <p class="para">Traversant période compliquée en ce début saison, le bureau directeur du RCA est en train de gérer plusieurs dossiers liés aux dus des joueurs, aux litiges avec les anciens, et se prépare à lever l’interdiction de recruter lors de ce mercato hivernal.<br>Le bureau du Raja de Casablanca a informé, hier vendredi 17 janvier, dans un communiqué publié diffusé sur ses réseaux sociaux, qu’il travaille sur plusieurs dossiers, notamment le règlement des impayés des joueurs, la résolution des litiges internationaux impliquant plusieurs anciens du club, ainsi que les démarches visant à lever l’interdiction de recrutement imposé durant cette période de transfert hivernal.<br>Le même communiqué a également précisé que le comité directeur annoncera, dans les prochains jours, la date de la tenue d’une assemblée générale extraordinaire, qui permettra de décider de l’avenir du club une fois ces dossiers réglés.</p><br><br>
+    <img src="35.jpg" alt="no"><br><br>
+    <p>Par ailleurs, les Aigles Verts occupent la 8e position du classement de Botola Pro Inwi avec 23 points et deux matchs en retard. En Ligue des Champions, ils sont troisièmes du groupe B avec 5 points et devront battre l’AS Maniema Union tout en attendant le résultat de l’autre rencontre opposant l’AS FAR à Mamelodi Sundowns pour espérer voir les quarts de finale.</p><br><br>
+    </main>
+    <aside>
+        <h3>Articles similaires:</h3><br>
+        <ul>
+            <li><a href="act2.html"><img src="2.jpg" alt="no" height="80px" width="200px"><p>Sundowns-AS FAR: un sommet aux enjeux multiples</p></a></li><br>
+            <li><a href="act1.html"><img src="1.jpg" style="margin-bottom: 20px;" alt="no" height="80px" width="200px"><p>Date du tirage au sort de la Coupe d'Afrique des Nations 2025 au Maroc et les chaînes de diffusion</p></a></li>
+            <li><a href="act3.html"><img src="3.jpg" alt="no" height="80px" width="200px"><p>Raja: le bureau directeur tente de redresser la barre</p></a></li><br>
+            <li><a href="act4.html"><img src="4.jpg" alt="no" height="80px" width="200px"><p>Grand stade de Tanger: arrivée de sièges flambant neufs</p></a></li>
+        </ul>
+    </aside>
+</section>
+<footer>
+    <h3>tous droits réservés © 2025</h3><img src="evengo.png" alt="no" height="50px">
+</footer>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="evengo.png">
+    <title>EvenGo</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       
+    }
+    body{
+        background-color: #282829;
+    }
+    header{
+       height: 50px;
+    }
+    .btn{
+        background-color: #27AE60;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .type1{
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        transition: background-color 0.5s;
+    }
+    .head{
+       text-align: center;
+         line-height: 50px;
+    }
+    .logo{
+        position: absolute;
+        top: 0;
+    }
+    nav{
+        position: sticky;
+            top: 0;
+            
+    }
+    nav ul{
+        list-style-type: none;
+            
+    }
+    nav li{
+        float: left;
+        width: 20%;
+        box-sizing: border-box;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        background-color: #27AE60;
+    }
+    nav a{
+        color: white;
+        display: block;
+        transition: background-color 0.5s;      
+    }
+    nav a:hover{
+        background-color: #555;
+    }
+    header h2{
+        color: white;
+    }
+    a{
+        text-decoration: none;  
+        color: white; 
+    }
+    .type1:hover{
+        background-color: #1F8B4C;
+    }
+    footer{
+        height: 50px;
+        background-color: #27AE60;
+        text-align: center;
+        line-height: 50px;
+        position: absolute;
+        bottom: 70px;
+        width: 100%;
+    }
+    footer h3{
+        color: white;
+    }
+    section {
+            background-color: #333;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        main {
+            padding: 60px;
+        }
+        .contact-info {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info h2 {
+            margin-top: 0;
+        }
+        .social-media a {
+            margin: 0 30px;
+            text-decoration: none;
+            color: #1da1f2;
+        }
+        .contact-info p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 class="head">Reserver votre ticket de votre match préféré</h2>
+        <img src="evengo.png" alt="no" height="50px" class="logo">
+        <input type="button" value="se connecter" onclick="window.location.href='register.html'" class="btn type1">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="event.html">matchs</a></li>
+            <li><a href="actualité.html">Actualités</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h1>contactez nous</h1>
+    </section>
+    <main>
+        <div class="contact-info">
+            <h2>contact infos:</h2>
+            <p>Email: talbiyassine36@gmail.com</p>
+            <p>Téléphone: +212 709720377</p>
+            <h2 style="margin-bottom: 20px;">social media:</h2>
+            <div class="social-media">
+                <a href="https://facebook.com/votreprofil" target="_blank">Facebook</a>
+                <a href="https://twitter.com/votreprofil" target="_blank">Twitter</a>
+                <a href="https://instagram.com/yassine_sama" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h3>tous droits réservés © 2025</h3><img src="evengo.png" alt="no" height="50px">
+    </footer>
+</body>
+</html>

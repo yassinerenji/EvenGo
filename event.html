@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="evengo.png">
+    <title>EvenGo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       
+    }
+    body{
+        background-color: #282829;
+    }
+    header{
+       height: 50px;
+    }
+    .btn{
+        background-color: #27AE60;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .type1{
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        transition: background-color 0.5s;
+    }
+    .head{
+       text-align: center;
+         line-height: 50px;
+    }
+    .logo{
+        position: absolute;
+        top: 0;
+    }
+    nav{
+        position: sticky;
+            top: 0;
+            
+    }
+    nav ul{
+        list-style-type: none;
+            
+    }
+    nav li{
+        float: left;
+        width: 20%;
+        box-sizing: border-box;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        background-color: #27AE60;
+    }
+    nav a{
+        color: white;
+        display: block;
+        transition: background-color 0.5s;      
+    }
+    nav a:hover{
+        background-color: #555;
+    }
+    h2{
+        color: white;
+    }
+    a{
+        text-decoration: none;  
+        color: white; 
+    }
+    .cherche{
+        width: 30%;
+        margin-left: 35%;
+        border-radius: 10px;
+        border: none;
+        padding: 10px;
+    }
+    .prochain{
+        width: 95%;
+        height: fit-content;
+        margin-left: 2.5%;
+        background-color: #555;
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .event{
+        text-align: center;
+        margin: 10px 0;
+        background-color: #2ECC71;
+        border-radius: 15px;
+        width: 45%;
+    }
+    .type2{
+        float: right;
+        margin-top: -20px;
+        background-color: #27AE60;
+        transition: background-color 0.5s;
+    }
+    .type2:hover,.type1:hover{
+        background-color: #1F8B4C;
+    }
+    .type3{
+        background-color: #2980B9;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 5px 0 10px;
+        transition: background-color 0.5s;
+    }
+    .type3:hover{
+        background-color: #1F6392;
+    }
+    footer{
+        height: 50px;
+        background-color: #27AE60;
+        text-align: center;
+        line-height: 50px;
+    }
+    footer h3{
+        color: white;
+    }
+    .event p{
+        font-family: "Roboto Slab", serif;
+        font-style: normal;
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 class="head">Reserver votre ticket de votre match préféré</h2>
+        <img src="evengo.png" alt="no" height="50px" class="logo">
+        <input type="button" value="se connecter" onclick="window.location.href='register.html'" class="btn type1">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="event.html">matchs</a></li>
+            <li><a href="actualité.html">Actualités</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <br><br><br><br>
+    <input type="text" placeholder="Chercher un match" class="cherche"><br><br>
+    <section class="prochain">
+        <div class="event">
+            <br><h3>Championnat du Maroc Professionnel Première Division 2024/2025</h3><br>
+            <h3>DHJ VS MAS</h3>
+            <img src="DHJMAS.png" alt="no" height="200px" width="500px">
+            <p>Journée: 21</p>
+            <p>Stade: Stade Ben M’Hamed El Abdi d'El Jadida</p>
+            <p>Date: 16/02/2025</p>
+            <p>Heure: 16:00</p>
+            <input type="button" value="Reserver votre ticket" onclick="window.location.href='DHJvsMAS.html'" class="btn type3">
+        </div>
+        <div class="event">
+            <br><h3>Championnat du Maroc Professionnel Première Division 2024/2025</h3><br>
+            <h3>RCA VS JSS</h3>
+            <img src="RCAJSS.png" alt="no" height="200px" width="500px">
+            <p>Journée: 21</p>
+            <p>Stade: Stade Larbi Zaouli de Casablanca</p>
+            <p>Date: 15/02/2025</p>
+            <p>Heure: 20:00</p>
+            <input type="button" value="Reserver votre ticket" onclick="window.location.href='RCAvsJSS.html'" class="btn type3">
+        </div>
+        <div class="event">
+            <br><h3>Championnat du Maroc Professionnel Première Division 2024/2025</h3><br>
+            <h3>FUS VS ASFAR</h3>
+            <img src="FUSASFAR.png" alt="no" height="200px">
+            <p>Journée: 21</p>
+            <p>Stade: Stade municipal de Kenitra</p>
+            <p>Date: 15/02/2025</p>
+            <p>Heure: 18:00</p>
+            <input type="button" value="Reserver votre ticket" onclick="window.location.href='FUSvsASFAR.html'" class="btn type3">
+        </div>
+        <div class="event">
+            <br><h3>Championnat du Maroc Professionnel Première Division 2024/2025</h3><br>
+            <h3>IRT vs OCS</h3>
+            <img src="IRTOCS.png" alt="no" height="200px" width="500px">
+            <p>Journée: 21</p>
+            <p>Stade: Stade du village sportif de Tanger</p>
+            <p>Date: 15/02/2025</p>
+            <p>Heure: 16:00</p>
+            <input type="button" value="Reserver votre ticket" onclick="window.location.href='IRTvsOCS.html'" class="btn type3">
+        </div>
+        <div class="event">
+            <br><h3>Championnat du Maroc Professionnel Première Division 2024/2025</h3><br>
+            <h3>ِCODM VS RCAZ</h3>
+            <img src="CODMRCAZ.png" alt="no" height="200px" width="500px">
+            <p>Journée: 21</p>
+            <p>Stade: Stade d'honneur de Meknès</p>
+            <p>Date: 14/02/2025</p>
+            <p>Heure: 20:00</p>
+            <input type="button" value="Reserver votre ticket" onclick="window.location.href='CODMvsRCAZ.html'" class="btn type3">
+        </div>
+        <div class="event">
+            <br><h3>Championnat du Maroc Professionnel Première Division 2024/2025</h3><br>
+            <h3>HUSA vs MAT</h3>
+            <img src="husamat.png" alt="no" height="200px" width="500px">
+            <p>Journée: 21</p>
+            <p>Stade: Stade larbi zaouli de Casablanca</p>
+            <p>Date: 14/02/2025</p>
+            <p>Heure: 18:00</p>
+            <input type="button" value="Reserver votre ticket" onclick="window.location.href='HUSAvsMAT.html'" class="btn type3">
+        </div>
+    </section>
+    <br><br>
+    <footer>
+        <h3>tous droits réservés © 2025</h3><img src="evengo.png" alt="no" height="50px">
+    </footer>
+</body>
+</html>

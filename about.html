@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="evengo.png">
+    <title>EvenGo</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       
+    }
+    body{
+        background-color: #282829;
+    }
+    header{
+       height: 50px;
+    }
+    .btn{
+        background-color: #27AE60;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .type1{
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        transition: background-color 0.5s;
+    }
+    .head{
+       text-align: center;
+         line-height: 50px;
+    }
+    .logo{
+        position: absolute;
+        top: 0;
+    }
+    nav{
+        position: sticky;
+            top: 0;
+            
+    }
+    nav ul{
+        list-style-type: none;
+            
+    }
+    nav li{
+        float: left;
+        width: 20%;
+        box-sizing: border-box;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        background-color: #27AE60;
+    }
+    nav a{
+        color: white;
+        display: block;
+        transition: background-color 0.5s;      
+    }
+    nav a:hover{
+        background-color: #555;
+    }
+    h2{
+        color: white;
+    }
+    a{
+        text-decoration: none;  
+        color: white; 
+    }
+    .type1:hover{
+        background-color: #1F8B4C;
+    }
+    footer{
+        height: 50px;
+        background-color: #27AE60;
+        text-align: center;
+        line-height: 50px;
+    }
+    footer h3{
+        color: white;
+    }
+    .about{
+        margin: 20px;
+        padding: 10px;
+        color: white;
+        text-align: justify;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        width: 80%;
+        margin: 135px auto;
+        border-left: #282829 solid;
+        border-right: #282829 solid;
+        border-top: #27AE60 solid;
+        border-bottom: #27AE60 solid;
+        animation: borderMovement 0.5s linear infinite;
+        }
+
+        @keyframes borderMovement {
+            0% {
+                border-color: #282829 #282829 #27AE60 #27AE60;
+            }
+            25% {
+                border-color: #27AE60 #282829 #282829 #27AE60;
+            }
+            50% {
+                border-color: #27AE60 #27AE60 #282829 #282829;
+            }
+            75% {
+                border-color: #282829 #27AE60 #27AE60 #282829;
+            }
+            100% {
+                border-color: #282829 #282829 #27AE60 #27AE60;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 class="head">Reserver votre ticket de votre match préféré</h2>
+        <img src="evengo.png" alt="no" height="50px" class="logo">
+        <input type="button" value="se connecter" onclick="window.location.href='register.html'" class="btn type1">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="event.html">matchs</a></li>
+            <li><a href="actualité.html">Actualités</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <br><br><br><br>
+    <div class="about">
+        <h2 style="text-align: center; margin-bottom: 20px;">EvenGo</h2>
+        <p>EvenGo est une plateforme de réservation de tickets pour les matchs de football. Elle vous permet de réserver votre ticket en ligne et de le recevoir chez vous. Vous pouvez également consulter les actualités des matchs et les résultats des matchs précédents. EvenGo vous permet de suivre les matchs de votre équipe préférée et de réserver votre ticket pour les matchs à venir.</p>
+    </div>
+    <footer>
+        <h3>tous droits réservés © 2025</h3><img src="evengo.png" alt="no" height="50px">
+    </footer>
+</body>
+</html>

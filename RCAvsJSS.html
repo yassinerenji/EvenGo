@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation de Billet de Match</title>
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/g0RGVDBR/image-removebg-preview.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Import Font Awesome pour les icônes -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: url('terrain.jpg') no-repeat center center fixed; 
+            background-size: cover;
+            color: #fff;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .container {
+            width: 70%;
+            margin: 0 auto;
+            background-color: #2a2b38;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 300%;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        form {
+            display: grid;
+            grid-gap: 20px;
+        }
+        label {
+            font-size: 1.2em;
+        }
+        input[type="text"], input[type="tel"], input[type="number"], input[type="email"], select {
+            width: 100%;
+            padding: 12px;
+            border-radius: 5px;
+            border: 2px solid #ccc;
+            font-size: 1em;
+        }
+        input[type="text"]:focus, input[type="tel"]:focus, input[type="number"]:focus, select:focus {
+            border-color: #27AE60;
+        }
+        .form-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .form-group input {
+            width: 100%;
+        }
+        .payment-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .payment-group input {
+            width: 100%;
+        }
+        .total-price {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #27AE60;
+        }
+        .btn {
+            background-color: #27AE60;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #1F8B4C;
+        }
+        h2{
+            text-align: center;
+        }
+        .payment-method {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .payment-method i {
+            font-size: 2em;
+            color: #555;
+            transition: color 0.3s;
+        }
+        
+        
+    </style>
+</head>
+<body>
+
+    <h1>Réservation de Billet de Match <font color="red">RCA vs JSS</font></h1>
+
+    <div class="container">
+        <form action="index.html" method="POST">
+            
+            <div class="form-group">
+                <div>
+                    <label for="first-name">Nom</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Entrez votre nom" required>
+                </div>
+                <div>
+                    <label for="last-name">Prénom</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Entrez votre prénom" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div>
+                    <label for="national-id">Numéro de la carte d'identité</label>
+                    <input type="tel" id="national-id" name="national-id" placeholder="Entrez votre numéro de carte d'identité" required>
+                </div>
+                <div>
+                    <label for="phone">Numéro de téléphone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Entrez votre numéro de téléphone" required>
+                </div>
+            
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <div>
+                    <label for="seat-area">Choisir la zone</label>
+                    <select id="seat-area" name="seat-area" required>
+                        <option value="default">-- choisir --</option>
+                        <option value="vip">Zone vip - 100 MAD</option>
+                        <option value="north">Zone Nord - 50 MAD</option>
+                        <option value="south">Zone Sud - 50 MAD</option>
+                        <option value="east">Zone Est - 35 MAD</option>
+                        <option value="west">Zone Ouest - 30 MAD</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="match-date">Date du match</label>
+                    <input type="text" id="match-date" name="match-date" value="18/01/2025  18:00" readonly>
+                </div>
+            </div>
+
+
+            
+            <h2>Paiement</h2>
+            <div class="payment-group">
+                <div>
+                    <label for="card-number">Numéro de carte</label>
+                    <input type="number" id="card-number" name="card-number" placeholder="Entrez le numéro de carte" required>
+                </div>
+                <div>
+                    <label for="expiry-date">Date d'expiration</label>
+                    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/AA" required>
+                </div>
+            </div>
+
+            <div class="payment-group">
+                <div>
+                    <label for="cvv">CVV</label>
+                    <input type="number" id="cvv" name="cvv" placeholder="Entrez le CVV" required>
+                </div>
+            </div>
+
+          
+            <div class="payment-method">
+                <div>
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                </div>
+                <div class="total-price">
+                    <p>Total à payer: <span id="total-price">100</span> MAD</p>
+                </div>
+            </div>
+
+            <div>
+                <input type="submit" value="Réserver maintenant" class="btn">
+            </div>
+        </form>
+    </div>
+
+    <script>
+        
+        const seatArea = document.getElementById('seat-area');
+        const totalPrice = document.getElementById('total-price');
+
+        seatArea.addEventListener('change', function() {
+            let price = 0;
+            switch (seatArea.value) {
+                case 'north':
+                    price = 50;
+                    break;
+                case 'south':
+                    price = 50;
+                    break;
+                case 'east':
+                    price = 35;
+                    break;
+                case 'west':
+                    price = 30;
+                    break;
+                case 'vip':
+                    price = 100;
+                    break;
+                case 'default':
+                    price = 0;
+            }
+            totalPrice.textContent = price;
+        });
+    </script>
+
+</body>
+</html>
